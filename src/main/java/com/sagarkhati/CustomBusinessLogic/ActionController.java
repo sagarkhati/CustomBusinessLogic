@@ -37,7 +37,7 @@ class ActionController {
 
 		CreateBookInsertInput createBookInsertInput = actionArgs.getobject();
 
-		if (createBookInsertInput.getbook_name().strip() == "") {
+		if (createBookInsertInput.getbook_name().trim() == "") {
 			throw new RuntimeException("Please re-enter book name. It can not be empty or white spaces");
 		}
 
